@@ -38,6 +38,7 @@ class Game():
 	def update(self):
 		self.all_sprites.update()
 		self.camera.update(self.p1)
+		#print('ALL-SPRITES---->', [s for s in self.all_sprites if s not in self.walls])
 
 	def events(self):
 		for event in pg.event.get():

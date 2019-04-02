@@ -47,7 +47,7 @@ class Camera():
 		x = max(x, -(self.width - screen_width))
 		y = max(y, -(self.height - screen_height))
 
-		print('MAP', self.width, self.height)
-		print('CAMERA', self.camera.bottom)
+		# print('MAP', self.width, self.height)
+		# print('CAMERA', self.camera.bottom)
 
 		self.camera = pg.Rect(x, y, self.width, self.height)
