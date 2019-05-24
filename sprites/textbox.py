@@ -10,7 +10,8 @@ class TextBox(pg.sprite.Sprite):
 		self.passable = True
 		self.speaker = speaker
 		self.message = message
-		self.image = pg.font.Font(None, 24).render(message, True, BLACK)
+		self.size = 24
+		self.image = pg.font.Font(None, self.size).render(message, True, BLACK)
 		self.rect = self.image.get_rect()
 		self.rect.x, self.rect.y = self.speaker.rect.topright
 

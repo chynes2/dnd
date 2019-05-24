@@ -30,5 +30,5 @@ class NPC(pg.sprite.Sprite):
 		if inflated.colliderect(self.game.p1.rect):
 			if not self.triggered:
 				self.triggered = True
-				message = 'Hail and well met, adventurer!'
+				message = 'Have you heard about my amazing girlfriend Disha?!'
 				TextBox(self.game, self.rect.topright[0], self.rect.topright[1], self, message)
